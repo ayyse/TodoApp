@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientJsonpModule } from '@angular/common/http';
@@ -38,6 +38,7 @@ import { SidebarComponent } from './layout/sidebar.component';
 import { SidebarLogoComponent } from './layout/sidebar-logo.component';
 import { SidebarUserPanelComponent } from './layout/sidebar-user-panel.component';
 import { SidebarMenuComponent } from './layout/sidebar-menu.component';
+import { TodoComponent } from './todos/todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { SidebarMenuComponent } from './layout/sidebar-menu.component';
     SidebarComponent,
     SidebarLogoComponent,
     SidebarUserPanelComponent,
-    SidebarMenuComponent
+    SidebarMenuComponent,
+    TodoComponent
   ],
   imports: [
     CommonModule,
@@ -97,5 +99,6 @@ import { SidebarMenuComponent } from './layout/sidebar-menu.component';
     EditUserDialogComponent,
     ResetPasswordDialogComponent,
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}

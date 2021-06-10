@@ -3,6 +3,7 @@ using Abp.Zero.EntityFrameworkCore;
 using TodoApp.Authorization.Roles;
 using TodoApp.Authorization.Users;
 using TodoApp.MultiTenancy;
+using TodoApp.Models;
 
 namespace TodoApp.EntityFrameworkCore
 {
@@ -14,5 +15,8 @@ namespace TodoApp.EntityFrameworkCore
             : base(options)
         {
         }
+
+        public virtual DbSet<Todo> Todos { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
     }
 }
