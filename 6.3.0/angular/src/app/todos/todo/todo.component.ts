@@ -10,10 +10,11 @@ import { FormBuilder, Validators, FormControl, FormGroup } from '@angular/forms'
 })
 export class TodoComponent implements OnInit {
 
+  categories: CategoryDto[] = []
   todos: TodoDto[] = []
-  todoAddForm: FormGroup
-
   todo: TodoDto = new TodoDto()
+  todoAddForm: FormGroup
+  selectedCategory: string
   category: CategoryDto = new CategoryDto()
 
   constructor(
@@ -45,8 +46,12 @@ export class TodoComponent implements OnInit {
   }
 
   todoAdd(todo: TodoDto) {
-    todo.categoryId = 2
-    todo.categoryName = "Not Completed"
+    this.todo.categoryId = 2
+    if(this.category.id == 2){
+      this.todo.categoryName = "Not Completed"
+    }else{
+      this.todo.categoryName = "Completed"
+    }
     this.todoService.create(todo).subscribe(response => {
       this.todo = response
     })
