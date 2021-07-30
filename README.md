@@ -18,14 +18,14 @@ Create & download your project from https://aspnetboilerplate.com/Templates
 # Screenshots
 
 #### Sample Dashboard Page
-![](_screenshots/module-zero-core-template-ui-home.png)
+![](https://github.com/ayyse/TodoApp/blob/main/6.3.0/_screenshots/ui-home.png)
 
 #### User Creation Modal
-![](_screenshots/module-zero-core-template-ui-user-create-modal.png)
+![](https://github.com/ayyse/TodoApp/blob/main/6.3.0/_screenshots/ui-user-create-modal.png)
 
 #### Login Page
 
-![](_screenshots/module-zero-core-template-ui-login.png)
+![](https://github.com/ayyse/TodoApp/blob/main/6.3.0/_screenshots/ui-login.png)
 
 # Documentation
 
